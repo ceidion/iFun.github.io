@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 	<title>Bill Guo | Home</title>
-	
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	
 	<link rel="shortcut icon" href="https://github.com/iFun/iFun.github.io/blob/master/images/iconkey.jpg?raw=true">
@@ -25,8 +25,9 @@
 	    		verticalCentered: true,
 	    		navigation: true,
 	    		navigationPosition: 'right',
-	    		navigationTooltips: ['firstSlide', 'secondSlide','thirdSlide','fourSlide'],
+	    		navigationTooltips: ['Home', 'About','Projects','Contact'],
 	    		resize : true,
+	    		anchors:['H', 'A','P','C'],
 	    	});	
 		});
 	</script>
@@ -34,8 +35,22 @@
 </head>
 <body>
 
-<div id="header"></div>
-<div id="footer">Footer</div>
+<div id="header">
+<div id= "name">Bill Guo</div>
+<a href="#H"><div class="button" id= "Home">Home</div></a>
+<a href="#A"><div class="button" id= "About">About</div></a>
+<a href="#P"><div class="button" id= "Projects">Projects</div></a>
+<a href="#C"><div class="button" id= "Contact">Contact</div></a>
+</div>
+
+<div id="footer">
+<div id="Linked">
+to do
+</div>	
+</div>
+	
+
+
 
 <div id="fullpage">
 	<div class="section" id="section0"></div>

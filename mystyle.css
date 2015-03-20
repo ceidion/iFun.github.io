@@ -33,23 +33,63 @@
 		background-image: url(bg1.jpg);
 
 	}
-	#section3 h1{
-		color: #000;
-	}
+	#name{
+		font-family: 'Brush Script MT', cursive;
+		font-size: 36px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 32.3999996185303px;
+		position: fixed;
+		top:12px;
+		left: 80px;
+		color: white;
 
+	}
+	.button{
+		font-family: 'Arial Narrow', Arial, sans-serif;
+		font-size: 20px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.3999996185303px;
+		position: fixed;
+		color: white;
+		top:13px;
+	}
+	.button:hover{
+		color: grey;
+	}
+	#Home
+	{	
+		right: 400px;
+	}
+	#About{
+		right: 300px;
+	}
+	#Projects{
+		right: 180px;
+	}
+	#Contact{
+		right: 65px;
+	}
+	#Linked{
+		position: fixed;
+		bottom:13px;
+		right:100px;
+	}
+	
 	/* Fixed header and footer.
 	* --------------------------------------- */
 	#header{
 		position:fixed;
-		height: 40px;
+		height: 30px;
 		display:block;
 		width: 100%;
-		background: white;
+		background-color:rgba(0,0,0,.5);
 		z-index:9;
 		text-align:center;
-		color: #f2f2f2;
-		padding: 20px 0 0 0;
-		opacity: 0.4;
+		padding: 20px 0 0 0;	
 	}
 
 	#footer{
@@ -57,9 +97,8 @@
 		height: 30px;
 		display:block;
 		width: 100%;
-		background: white;
+		background-color:rgba(255,255,255,.5);
 		z-index:9;
-		text-align:center;
 		color: #f2f2f2;
 		padding: 20px 0 0 0;
 		opacity: 0.4;
@@ -70,15 +109,4 @@
 	}
 	#footer{
 		bottom:0px;
-	}
-
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu {
-		bottom: 80px;
-	}
-	#infoMenu li a {
-		color: #fff;
-		z-index: 999;
 	}
