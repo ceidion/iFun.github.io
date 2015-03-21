@@ -103,6 +103,21 @@
 		padding: 20px 0 0 0;
 		opacity: 0.4;
 	}
+	#Github{
+		position: fixed;
+		right: 130px;
+		bottom:5px;
+	}
+	#Facebook{
+		position: fixed;
+		right: 50px;
+		bottom:5px;	
+	}
+	#lin{
+		position: fixed;
+		right: 90px;
+		bottom: 5px;
+	}
 
 	#header{
 		top:0px;
