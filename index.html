@@ -28,6 +28,12 @@
 	    		navigationTooltips: ['Home', 'About','Projects','Contact'],
 	    		resize : true,
 	    		anchors:['H', 'A','P','C'],
+	    		afterRender: function(){
+
+
+					//playing the video
+					$('video').get(0).play();
+				}
 	    	});	
 		});
 	</script>
@@ -44,6 +50,7 @@
 </div>
 
 <div id="footer">
+	<audio autoplay id="music" src="images/The Dawn.mp3" controls></audio>
 <div id="Github"> 
 	<a href="https://github.com/iFun"><img src="images/github.png" border="0" Height="30" Width="30"></a>
 </div>
@@ -59,7 +66,13 @@
 
 
 <div id="fullpage">
-	<div class="section" id="section0"></div>
+	
+	<div class="section" id="section0">
+		<video autoplay loop muted id="myVideo">
+		<source src="images/backgroud.mp4" type="video/mp4">
+		</video>
+	</div>
+	
 	<div class="section" id="section1"></div>
 	<div class="section" id="section2"></div>
 	<div class="section" id="section3"></div>
