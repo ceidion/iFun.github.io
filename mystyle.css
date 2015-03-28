@@ -2,15 +2,6 @@
 			font-size: 6em;
 			text-align: center;
 		}
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
 	#section0,
 	#section1,
 	#section2,
@@ -34,24 +25,43 @@
 
 	}
 	#section0 .layer{
+		background: url(images/filter.png) top left repeat;
 		position: absolute;
-		z-index: 4;
+		z-index: 10;
 		width: 100%;
-		left: 0;
-		top: 43%;
-		background: white;
-		opacity: 0.5;
+		left:0;
+		top:0;
+		bottom: 50px;
+		opacity: 0.75;
+		
+
+	}
+	#signature{
+		position:fixed;
+		color: white;
+		top: 28%;
+		left: 32%;
+		font-family: 'Brush Script MT', cursive;
+		font-size: 92px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 95.3999996185303px;
 	}
 	#quote{
-		color: #424242;
+		position: fixed;
+		top: 55%;
+		left: 10%;
+		color: white;
 	    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 		letter-spacing:0.1em;
 		text-align:center;
 		margin: 40px auto;
 		text-transform: lowercase;
 		line-height: 145%;
-		font-size: 14pt;
+		font-size: 16pt;
 		font-variant: small-caps;
+
 	}
 	#quote:first-letter{
         	text-transform: uppercase;
@@ -88,6 +98,63 @@
 		color: white;
 
 	}
+* {margin: 0; padding: 0;}
+.ibutton {
+	margin: 200px 20px;
+	background: #fff;
+	overflow: hidden;
+	width: 569px;
+	position: fixed;
+	top:18%;
+	left: 25%;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ibutton li {
+	width: 120px; border-left: 5px solid #666;
+	float: left;
+	cursor: pointer;
+	list-style-type: none;
+	
+	padding: 10px 50px 10px 15px;
+	
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+.ibutton li h2 {
+	font-family: georgia;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 16px;
+}
+
+.ibutton li p{
+	font-size: 12px;
+	color: black;
+	
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+}
+
+.ibutton li:hover {
+	background: #333;
+	border-left: 5px solid #000;
+}
+
+.ibutton li:hover h2 {
+	font-weight: bold;
+	color: #fff;
+}
+
+.ibutton li:hover p {
+	color: #ccc;
+	padding-left: 5px;
+}
 	.button{
 		font-family: 'Arial Narrow', Arial, sans-serif;
 		font-size: 20px;
