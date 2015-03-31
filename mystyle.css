@@ -15,10 +15,10 @@
 
 	}
 	#section1{
-		background-image: url(images/bg1.jpg);
+		background-image: url(images/about.jpg);
 	}
 	#section2{
-		background-image: url(images/bg2.jpg);
+		background-image: url(images/bg1.jpg);
 	}
 	#section3{
 		background-image: url(images/bg4.jpg);
@@ -36,13 +36,22 @@
 		
 
 	}
+	#tag{
+		position: fixed;
+		font-family: 'Comic Sans',cursive;
+		font-size: 20px;
+		top: 40%;
+		left: 34%;
+		color: white;
+
+	}
 	#signature{
 		position:fixed;
 		color: white;
-		top: 28%;
-		left: 32%;
+		top: 20%;
+		left: 30%;
 		font-family: 'Brush Script MT', cursive;
-		font-size: 92px;
+		font-size: 102px;
 		font-style: normal;
 		font-variant: normal;
 		font-weight: 500;
@@ -50,7 +59,7 @@
 	}
 	#quote{
 		position: fixed;
-		top: 55%;
+		top: 60%;
 		left: 10%;
 		color: white;
 	    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
@@ -74,7 +83,7 @@
 	#myVideo{
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		bottom: 2%;
 		top:0;
 		right:0;
 		width: 100%;
@@ -105,7 +114,7 @@
 	overflow: hidden;
 	width: 569px;
 	position: fixed;
-	top:18%;
+	top:22%;
 	left: 25%;
 	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -233,4 +242,9 @@
 	}
 	#footer{
 		bottom:0px;
+	}
+	#mepicture{
+		position: relative;
+		top: 3%;
+		left: 30%;
 	}
