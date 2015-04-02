@@ -16,17 +16,22 @@
 	}
 	#section1{
 		background-image: url(images/about.jpg);
+		-webkit-backface-visibility: hidden; 
+		-webkit-transform: translateZ(0);
 	}
 	#section2{
 		background-image: url(images/bg1.jpg);
+		-webkit-backface-visibility: hidden; 
+		-webkit-transform: translateZ(0);
 	}
 	#section3{
 		background-image: url(images/bg4.jpg);
-
+		-webkit-backface-visibility: hidden; 
+		-webkit-transform: translateZ(0);
 	}
 	#section0 .layer{
 		background: url(images/filter.png) top left repeat;
-		position: absolute;
+		position: fixed;
 		z-index: 10;
 		width: 100%;
 		left:0;
@@ -76,7 +81,7 @@
         	text-transform: uppercase;
           }
 	#music{
-		position: absolute;
+		position: fixed;
 		left: 10px;
 		bottom: 10px;
 	}
@@ -243,7 +248,7 @@
 		bottom:0px;
 	}
 	#mepicture{
-		position: absolute;
+		position: fixed;
 		bottom: 5%;
 		right: 5%;
 	}
@@ -252,12 +257,13 @@
 		text-indent: 2px;
 		height: 450px;
 		width: 500px;
-		position: absolute;
+		position: fixed;
 		color: #FEFCFF;
 		left: 2%;
 		top: 15%;
 		font-size: 17px;
 		font-family: "Arial", sans-serif;
+
 	}
 	a{
 		color:#C45AEC;
