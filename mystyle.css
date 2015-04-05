@@ -54,9 +54,9 @@
 		position:absolute;
 		color: white;
 		top: 20%;
-		left: 35%;
+		left: 33%;
 		font-family: 'Brush Script MT', cursive;
-		font-size: 130px;
+		font-size: 150%;
 		font-style: normal;
 		font-variant: normal;
 		font-weight: 500;
@@ -73,7 +73,7 @@
 		margin: 40px auto;
 		text-transform: lowercase;
 		line-height: 145%;
-		font-size: 24pt;
+		font-size: 33%;
 		font-variant: small-caps;
 
 	}
@@ -249,8 +249,8 @@
 	}
 	#mepicture{
 		position: absolute;
-		bottom: 5%;
-		right: 4%;
+		bottom: 10%;
+		right: 1%;
 	}
 	#txtforaboutme{
 		text-align: left;
@@ -261,7 +261,7 @@
 		color: #FEFCFF;
 		left: 2%;
 		top: 15%;
-		font-size: 24px;
+		font-size:23%;
 		font-family: "Arial", sans-serif;
 
 	}
