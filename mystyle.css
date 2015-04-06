@@ -288,10 +288,9 @@
 
 /* For 13inch Macbook screen
 * --------------------------------------- */
-
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1281px) {
 	#txtforaboutme{
-		font-size:16px;
+		font-size:17px;
 		height: 750px;
 		width: 500px;
 	}
@@ -322,7 +321,45 @@
 		font-size: 23%;
 	}
 
+}
 
-
-
+@media screen and (min-width:1290px) and (max-width:1293px) {
+	#txtforaboutme{
+		font-size:17px;
+		height: 750px;
+		width: 500px;
+	}
+	.mepicture img{
+		position: absolute;
+		bottom: 12%;
+		right: 5%;
+		height: 530px;
+		width: 420px;	
+	}
+	#signature{
+		position:absolute;
+		color: white;
+		top: 20%;
+		left: 28%;
+		font-size: 120%;
+	}
+	.ibutton {
+		top:23%;
+		left: 25%;
+	}
+	#quote{
+		position: absolute;
+		top: 68%;
+		left: 7%;
+		line-height: 105%;
+		font-size: 25%;
+	}
+	#tag{
+		position: absolute;
+		font-family: 'Comic Sans',cursive;
+		font-size: 22px;
+		top: 38%;
+		left: 33%;
+		color: white;
+	}
 }
