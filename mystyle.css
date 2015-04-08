@@ -322,8 +322,9 @@
 	}
 
 }
-
-@media screen and (min-width:1290px) and (max-width:1293px) {
+/* For 1366X768
+* --------------------------------------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) {
 	#txtforaboutme{
 		font-size:17px;
 		height: 750px;
@@ -331,7 +332,7 @@
 	}
 	.mepicture img{
 		position: absolute;
-		bottom: 12%;
+		bottom: 10%;
 		right: 5%;
 		height: 530px;
 		width: 420px;	
@@ -340,12 +341,12 @@
 		position:absolute;
 		color: white;
 		top: 20%;
-		left: 28%;
+		left: 30%;
 		font-size: 120%;
 	}
 	.ibutton {
 		top:23%;
-		left: 25%;
+		left: 29%;
 	}
 	#quote{
 		position: absolute;
@@ -359,7 +360,7 @@
 		font-family: 'Comic Sans',cursive;
 		font-size: 22px;
 		top: 38%;
-		left: 33%;
+		left: 35%;
 		color: white;
 	}
 }
