@@ -12,7 +12,7 @@
 	/* Defining each section background and styles
 	* --------------------------------------- */
 	#section0{
-
+		
 	}
 	#section1{
 		background-image: url(images/about.jpg);
@@ -25,9 +25,9 @@
 		-webkit-transform: translateZ(0);
 	}
 	#section3{
-		background-image: url(images/bg4.jpg);
-		-webkit-backface-visibility: hidden; 
-		-webkit-transform: translateZ(0);
+		background-image: url(images/bg3.jpg);
+		padding: 50px;
+		text-align: center;
 	}
 	#section0 .layer{
 		background: url(images/filter.png) top left repeat;
@@ -38,8 +38,6 @@
 		top:0;
 		bottom: 50px;
 		opacity: 0.75;
-		
-
 	}
 	#tag{
 		position: absolute;
@@ -209,7 +207,9 @@
 		text-align:center;
 		padding: 20px 0 0 0;	
 	}
-
+	.section0header{
+		display: none;
+	}
 	#footer{
 		position:fixed;
 		height: 30px;
@@ -244,7 +244,7 @@
 		bottom: 5px;
 	}
 	#lin:hover{
-		background-color: yellow;
+		background-color: #0976b4;
 	}
 	#header{
 		top:0px;
