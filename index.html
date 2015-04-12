@@ -18,7 +18,7 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	<script src="vendors/jquery.easings.min.js"></script>
 
@@ -35,9 +35,9 @@
 
 	        $(window).on("hashchange", function(){
 	        	if(window.location.hash == "#H") {
-				  $('#header').hide();
+				  $('#header').fadeOut("slow");
 				} else {
-				  $('#header').show();
+				  $('#header').fadeTo("slow", 1);
 				}
 	        });
 
