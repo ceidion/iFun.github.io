@@ -1,6 +1,6 @@
 /* For 1600X900
 * --------------------------------------- */
-@media screen and (min-width: 1500px) and (max-width: 1600px) and (min-height: 790px) and (max-height: 900px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) and (min-height: 650px) and (max-height: 1000px) {
 	#txtforaboutme{
 		font-size:19px;
 		height: 750px;
