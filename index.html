@@ -17,6 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="loading.css">
 
 	<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
 
@@ -31,8 +33,16 @@
 
 
 	<script type="text/javascript">
+		window.addEventListener("load",function(){
+			var load_screen = document.getElementById("loader-wrapper");
+			document.body.removeChild(load_screen);
+
+		});
+		
+
 		$(document).ready(function() 
 		{
+			
 			$('#header').hide();
 
 	        $(window).on("hashchange", function(){
@@ -61,6 +71,10 @@
 	</script>
 </head>
 <body>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div id="loadingquote">"20 years from now it won't matter what shoes you wore, how your hair looked or what jeans you bought;what will matter is what you learned and how you used it."</div>
+	</div>
 
 <div id="header">
 <div id= "name">Bill Guo</div>
