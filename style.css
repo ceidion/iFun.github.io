@@ -53,6 +53,9 @@
 .linkedin span {
 	background-color: #0976b4;
 }
+.file span {
+	background-color: black;
+}
 
 /* Icons */
 .icon-button i {
@@ -82,9 +85,13 @@
 .icon-button .icon-linkedin {
 	color: #0976b4;
 }
+.icon-button .icon-file {
+	color: black;
+}
 .icon-button:hover .icon-github,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-inbox,
-.icon-button:hover .icon-linkedin {
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .icon-file {
 	color: white;
 }
