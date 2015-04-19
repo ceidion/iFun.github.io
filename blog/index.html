@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html><head>
-	<title>Bill Guo | 404</title>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="https://github.com/iFun/iFun.github.io/blob/master/images/iconkey.jpg?raw=true">
-	
-<style>
-  h1 {
-  	position: fixed;
-  	font-size: 70px;
-  	left: 31%;
-  }
-  #wapper{
-  	position: fixed;
-  	top:28%;
-  	left: 35%;
-  }
-</style>
-</head>
+---
+layout: default
+---
 
-<body>
-	<h1>Hello </h1>
-	<div id="wapper"><img src="images/404.jpg" alt="code" height=auto width=auto> </div>
+<div class="home">
 
-</body>
-</html>	
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
