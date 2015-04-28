@@ -451,13 +451,13 @@
 	}
 	#socialbutton{
 		position: absolute;
-		bottom: 20%;
+		bottom: 18%;
 		left: 10%;
 	}
 	#finaltxt{
 		text-align: left;
 		text-indent: 2px;
-		height: 450px;
+		height: 500px;
 		width: 730px;
 		position: absolute;
 		left: 4%;
