@@ -46,13 +46,21 @@
                            count_course++;
                            var course1_text = $("#course1").val().replace(' ','/');
                             $.getJSON(url_prev + course1_text + url_end,function (d) {
-                                var course_name = d.data.course;
-                                var location_text = d.data.sections[0].location;
-                                var date = d.data.sections[0].date;
-                                var start_t = d.data.sections[0].start_time;
-                                var end_t = d.data.sections[0].end_time;
-                                var sections = d.data.sections[0].section;
-                                displaytext(course_name,location_text,date,start_t,end_t,sections);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course1_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name = d.data.course;
+                                    var location_text = d.data.sections[0].location;
+                                    var date = d.data.sections[0].date;
+                                    var start_t = d.data.sections[0].start_time;
+                                    var end_t = d.data.sections[0].end_time;
+                                    var sections = d.data.sections[0].section;
+                                    displaytext(course_name,location_text,date,start_t,end_t,sections);                         
+                                }
+
                             });
                         }
                        if($("#course2").val() != "")
@@ -60,29 +68,42 @@
                            count_course++;
                             var course2_text = $("#course2").val().replace(' ','/');
                             $.getJSON(url_prev + course2_text + url_end,function (d) {
-                                
-                                var course_name2 = d.data.course;
-                                var location_text2 = d.data.sections[0].location;
-                                var date2 = d.data.sections[0].date;
-                                var start_t2 = d.data.sections[0].start_time;
-                                var end_t2 = d.data.sections[0].end_time;
-                                var sections2 = d.data.sections[0].section;
-                                displaytext(course_name2,location_text2,date2,start_t2,end_t2,sections2);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course2_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name2 = d.data.course;
+                                    var location_text2 = d.data.sections[0].location;
+                                    var date2 = d.data.sections[0].date;
+                                    var start_t2 = d.data.sections[0].start_time;
+                                    var end_t2 = d.data.sections[0].end_time;
+                                    var sections2 = d.data.sections[0].section;
+                                    displaytext(course_name2,location_text2,date2,start_t2,end_t2,sections2);
+                                }
                             
                             });
                         }
                         if($("#course3").val() != "")
                         {
                             count_course++;
-                           var course3_text = $("#course3").val().replace(' ','/');
+                            var course3_text = $("#course3").val().replace(' ','/');
                             $.getJSON(url_prev + course3_text + url_end,function (d) {
-                                var course_name3 = d.data.course;
-                                var location_text3 = d.data.sections[0].location;
-                                var date3 = d.data.sections[0].date;
-                                var start_t3 = d.data.sections[0].start_time;
-                                var end_t3 = d.data.sections[0].end_time;
-                                var sections3 = d.data.sections[0].section;
-                                displaytext(course_name3,location_text3,date3,start_t3,end_t3,sections3);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course3_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name3 = d.data.course;
+                                    var location_text3 = d.data.sections[0].location;
+                                    var date3 = d.data.sections[0].date;
+                                    var start_t3 = d.data.sections[0].start_time;
+                                    var end_t3 = d.data.sections[0].end_time;
+                                    var sections3 = d.data.sections[0].section;
+                                    displaytext(course_name3,location_text3,date3,start_t3,end_t3,sections3);
+                                }
                             });
                         }
                          if($("#course4").val() != "")
@@ -90,13 +111,20 @@
                            count_course++;
                            var course4_text = $("#course4").val().replace(' ','/');
                             $.getJSON(url_prev + course4_text + url_end,function (d) {
-                                var course_name4 = d.data.course;
-                                var location_text4 = d.data.sections[0].location;
-                                var date4 = d.data.sections[0].date;
-                                var start_t4 = d.data.sections[0].start_time;
-                                var end_t4 = d.data.sections[0].end_time;
-                                var sections4 = d.data.sections[0].section;
-                                displaytext(course_name4,location_text4,date4,start_t4,end_t4,sections4);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course4_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name4 = d.data.course;
+                                    var location_text4 = d.data.sections[0].location;
+                                    var date4 = d.data.sections[0].date;
+                                    var start_t4 = d.data.sections[0].start_time;
+                                    var end_t4 = d.data.sections[0].end_time;
+                                    var sections4 = d.data.sections[0].section;
+                                    displaytext(course_name4,location_text4,date4,start_t4,end_t4,sections4);
+                                }
                             });
                         }
                         if($("#course5").val() != "")
@@ -104,13 +132,20 @@
                            count_course++;
                            var course5_text = $("#course5").val().replace(' ','/');
                             $.getJSON(url_prev + course5_text + url_end,function (d) {
-                                var course_name5 = d.data.course;
-                                var location_text5 = d.data.sections[0].location;
-                                var date5 = d.data.sections[0].date;
-                                var start_t5 = d.data.sections[0].start_time;
-                                var end_t5 = d.data.sections[0].end_time;
-                                var sections5 = d.data.sections[0].section;
-                                displaytext(course_name5,location_text5,date5,start_t5,end_t5,sections5);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course5_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name5 = d.data.course;
+                                    var location_text5 = d.data.sections[0].location;
+                                    var date5 = d.data.sections[0].date;
+                                    var start_t5 = d.data.sections[0].start_time;
+                                    var end_t5 = d.data.sections[0].end_time;
+                                    var sections5 = d.data.sections[0].section;
+                                    displaytext(course_name5,location_text5,date5,start_t5,end_t5,sections5);
+                                }
                             });
                         }
                         if($("#course6").val() != "")
@@ -118,13 +153,20 @@
                            count_course++;
                            var course6_text = $("#course6").val().replace(' ','/');
                             $.getJSON(url_prev + course6_text + url_end,function (d) {
-                                var course_name6 = d.data.course;
-                                var location_text6 = d.data.sections[0].location;
-                                var date6 = d.data.sections[0].date;
-                                var start_t6 = d.data.sections[0].start_time;
-                                var end_t6 = d.data.sections[0].end_time;
-                                var sections6 = d.data.sections[0].section;
-                                displaytext(course_name6,location_text6,date6,start_t6,end_t6,sections6);
+                                if(d.meta.message == "No data returned")
+                                {
+                                    alert(course1_text + "'s examschedule is not available yet ");
+                                }
+                                else
+                                {
+                                    var course_name6 = d.data.course;
+                                    var location_text6 = d.data.sections[0].location;
+                                    var date6 = d.data.sections[0].date;
+                                    var start_t6 = d.data.sections[0].start_time;
+                                    var end_t6 = d.data.sections[0].end_time;
+                                    var sections6 = d.data.sections[0].section;
+                                    displaytext(course_name6,location_text6,date6,start_t6,end_t6,sections6);
+                                }
                             });
                         }
                         
