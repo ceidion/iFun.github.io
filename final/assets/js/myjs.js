@@ -41,7 +41,7 @@
                         var url_end = "/examschedule.json?key=44d2af470a7abed99237188663c921e4";
                         var text_dowload = "";
                         text_dowload += "BEGIN:VCALENDAR\nCALSCALE:GREGORIAN\nVERSION:2.0\n" + "METHOD:PUBLISH\n";
-                        if($("#course1").val() != null)
+                        if($("#course1").val() != "")
                         {
                            count_course++;
                            var course1_text = $("#course1").val().replace(' ','/');
@@ -55,18 +55,21 @@
                                 displaytext(course_name,location_text,date,start_t,end_t,sections);
                             });
                         }
-                        if($("#course2").val() != "")
+                       if($("#course2").val() != "")
                         {
                            count_course++;
-                           var course2_text = $("#course2").val().replace(' ','/');
+                            var course2_text = $("#course2").val().replace(' ','/');
                             $.getJSON(url_prev + course2_text + url_end,function (d) {
+                                
                                 var course_name2 = d.data.course;
                                 var location_text2 = d.data.sections[0].location;
+
                                 var date2 = d.data.sections[0].date;
                                 var start_t2 = d.data.sections[0].start_time;
                                 var end_t2 = d.data.sections[0].end_time;
                                 var sections2 = d.data.sections[0].section;
                                 displaytext(course_name2,location_text2,date2,start_t2,end_t2,sections2);
+                            
                             });
                         }
                         if($("#course3").val() != "")
@@ -94,7 +97,7 @@
                                 var start_t4 = d.data.sections[0].start_time;
                                 var end_t4 = d.data.sections[0].end_time;
                                 var sections4 = d.data.sections[0].section;
-                                displaytext(course_name4,location_text4,date4,start_t2,end_t4,sections4);
+                                displaytext(course_name4,location_text4,date4,start_t4,end_t4,sections4);
                             });
                         }
                         if($("#course5").val() != "")
