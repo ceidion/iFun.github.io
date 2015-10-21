@@ -191,7 +191,15 @@
                             else
                             {
                                 count = 0;
-                                var text_am = "";
+                                if(time[0]!= 1)
+                                {
+                                    var text_am = "0";
+                                }
+                                else
+                                {
+                                    var text_am = "";
+                                }
+                                
                                 while(count < time.length - 3)
                                 {
                                     
