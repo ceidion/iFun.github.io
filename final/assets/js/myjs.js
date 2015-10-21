@@ -59,7 +59,7 @@
                         {
                            count_course++;
                            var course2_text = $("#course2").val().replace(' ','/');
-                            $.getJSON(url,function (d) {
+                            $.getJSON(url_prev + course2_text + url_end,function (d) {
                                 var course_name2 = d.data.course;
                                 var location_text2 = d.data.sections[0].location;
                                 var date2 = d.data.sections[0].date;
