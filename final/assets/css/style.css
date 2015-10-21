@@ -13,7 +13,7 @@ body {
 	margin-bottom: 10px;
 }
 .Course-input{
-  max-width: 480px;
+  max-width: 590px;
   height: 700px;
   padding: 15px 35px 45px;
   margin: 0 auto;
@@ -21,9 +21,16 @@ body {
   border: 1px solid rgba(0,0,0,0.1);
 }
 .form-control{
-	max-width: 300px;
+	max-width: 250px;
+}
+.table{
+	display: table;
 	margin-top: 15px;
-}  
+}
+.cell{
+	display: table-cell;
+	margin-left: 2px;
+}
 .btn{
 	margin-top: 15px;
 	padding: 10px 8px;
@@ -37,4 +44,21 @@ body {
 #notavailable{
 	display: none;
 }
-
+#section1{
+	max-width: 180px;
+}
+#section2{
+	max-width: 180px;
+}
+#section3{
+	max-width: 180px;
+}
+#section4{
+	max-width: 180px;
+}
+#section5{
+	max-width: 180px;
+}
+#section6{
+	max-width: 180px;
+}
