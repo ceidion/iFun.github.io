@@ -63,7 +63,6 @@
                                 
                                 var course_name2 = d.data.course;
                                 var location_text2 = d.data.sections[0].location;
-
                                 var date2 = d.data.sections[0].date;
                                 var start_t2 = d.data.sections[0].start_time;
                                 var end_t2 = d.data.sections[0].end_time;
@@ -182,7 +181,11 @@
                                     }
                                 }
                                 var a = parseInt(tmp);
-                                a = a+12;
+                                //avoid adding 12 to 12pm
+                                if(a != 12)
+                                {
+                                    a = a+12;
+                                }        
                                 return a.toString() + time_text;    
                             }
                             else
