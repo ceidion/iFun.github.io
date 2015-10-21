@@ -22,6 +22,8 @@
                 var url = "https://api.uwaterloo.ca/v2/courses/ECE/250/examschedule.json?key=44d2af470a7abed99237188663c921e4";
                 $.getJSON(url,function (d) {
                     var status = d.meta.message;
+                    var api_num = d.meta.requests;
+                    document.getElementById("api_request_time").innerHTML += " " + api_num;
                     if(status === "No data returned" || status == "401")
                     {
                         document.getElementById("notavailable").style.display = "inline";
