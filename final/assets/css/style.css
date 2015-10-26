@@ -44,6 +44,9 @@ body {
 #notavailable{
 	display: none;
 }
+#helpBlock{
+	display: none;
+}
 #section1{
 	max-width: 180px;
 }

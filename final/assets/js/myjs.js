@@ -18,7 +18,9 @@
                 $('#course6').typeahead({          
                     source: typeaheadSource
                 });
-
+                if ($.browser.webkit){
+                     document.getElementById("helpBlock").style.display = "inline";
+                }
                 var url = "https://api.uwaterloo.ca/v2/courses/ECE/250/examschedule.json?key=44d2af470a7abed99237188663c921e4";
                 $.getJSON(url,function (d) {
                     var status = d.meta.message;
