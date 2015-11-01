@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html><head>
+	<title>Bill Guo | Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bill Guo">
+    <meta name="keywords" content="bill,billguo,billchengguo">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
+
+	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet" type="text/css">
+
+	<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+
+	<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+	
+	<link rel="shortcut icon" href="https://github.com/iFun/iFun.github.io/blob/master/images/iconkey.jpg?raw=true">
+
+	<link rel="stylesheet" type="text/css" href="resources/css/jquery.fullPage.css" />
+
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	
+	<link rel="stylesheet" href="resources/css/loading.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script src="vendors/jquery.easings.min.js"></script>
+
+	<script type="text/javascript" src="resources/js/jquery.fullPage.js"></script>
+
+
+
+	<script type="text/javascript">
+		window.addEventListener("load",function(){
+			var load_screen = document.getElementById("loader-wrapper");
+			document.body.removeChild(load_screen);
+		});
+		
+
+		$(document).ready(function() 
+		{
+			
+			$('#header').hide();
+
+	        $(window).on("hashchange", function(){
+	        	if(window.location.hash == "#H") {
+				  $('#header').fadeOut("slow");
+				} else {
+				  $('#header').fadeTo("slow", 1);
+				}
+	        });
+
+	    	$('#fullpage').fullpage({
+	    		css3:true,
+	    		verticalCentered: true,
+	    		navigation: true,
+	    		navigationPosition: 'right',
+	    		navigationTooltips: ['Home', 'About','Projects','Contact'],
+	    		responsive: 1,
+	    		anchors:['H', 'A','P','C'],
+	    		afterRender: function(){
+
+					//playing the video
+					$('video').get(0).play();
+				}
+	    	});	
+		});
+	</script>
+</head>
+<body>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div id="loadingquote">"20 years from now it won't matter what shoes you wore, how your hair looked or what jeans you bought;what will matter is what you learned and how you used it."</div>
+	</div>
+
+<div id="header">
+<div id= "name">Bill Guo</div>
+<a href="#H"><div class="button" id= "Home">Home</div></a>
+<a href="https://billguocheng.wordpress.com/"target="_blank"><div class="button" id= "Blog">Blog</div></a>
+<a href="#A"><div class="button" id= "About">About</div></a>
+<a href="#P"><div class="button" id= "Projects">Projects</div></a>
+<a href="#C"><div class="button" id= "Contact">Contact</div></a>
+</div>
+
+<div id="footer">
+	<audio id="music" src="resources/images/The Dawn.mp3" controls></audio>
+<div id="Github"> 
+	<a href="https://github.com/iFun"target="_blank"><img src="resources/images/github.png" border="0" Height="35" Width="35"></a>
+</div>
+<div id="Facebook">
+	<a href="https://www.facebook.com/billguocheng"target="_blank"><img src="resources/images/facebook.jpg" border="0" Height="35" Width="35"></a>
+</div>
+<div id="lin">
+<a href="https://www.linkedin.com/in/billchengguo"target="_blank"><img src="resources/images/in.jpg" border="0" Height="35" Width="35"></a>
+</div>	
+</div>
+
+	
+<div id="fullpage">
+	
+	<div class="section" id="section0">
+		
+		<video autoplay loop muted id="myVideo">
+		<source src="resources/images/v1.mp4" type="video/mp4">
+		</video>
+		<div class="layer">
+			<div id="signature">Bill Cheng Guo</div>
+			<div id="tag">Technology Enthusiast |Geek|Apple Fan</div>
+			<div id="quote">The people who are crazy enough to think they can change the world, are the ones who do.</div>
+			<ul class="ibutton">
+			<a href="#A"><li>
+				<h2><font color="purple">About </font></h2>
+				<p>Who am I?</p>
+			</li></a>
+			<a href="#P"><li>
+				<h2><font color="purple">Projects </font></h2>
+				<p>Things I did for fun</p>
+			</li></a>
+			<a href="#C"><li>
+				<h2><font color="purple">Contact </font></h2>
+				<p>Want to See me?</p>
+			</li></a>
+			</ul>
+		</div>
+
+	</div>
+	
+	<div class="section" id="section1">
+	<div class="mepicture"> <img src="resources/images/me.png" height="350px"width= "310px"></div>
+	<div id="skills">Summary of <br> <strong>Skills</strong></div>
+	<div id="skillnames"> HTML/CSS <br><font color ="DarkCyan ">———————</font>———<br> C# Java <br>
+		<font color ="DarkCyan ">————————</font>——<br> JavaScript jQuery <br><font color ="DarkCyan">———————</font>———
+	</div>
+	<div id="titleforaboutme"><font color="grey">Personal and Professional <br></font><font color ="white">BACKGROUND</font>
+	</div>
+	<div id="txtaboutmefirst">Hey there! My name is Bill Guo and I’m currently a<a href="https://uwaterloo.ca/find-out-more/programs/computer-engineering"target="_blank"> Computer Engineering </a>student <br> at University of Waterloo.<br><br>
+	</div>
+	<div id="txtforaboutme">
+	I absolutely love advanced technology and computers. I believe that in the near future computers will change the way people live. Even more than they have already. I would really love that one day my creations/works are used by everyone in the future.That’s why I choose to study computer in the university. <br><br>Although I started to learn coding at University, I learned many programing languages and algorithms during my spare time. Meanwhile, I did many different coding projects to practise
+	the knowledge I learned because practice make it better.<br><br>
+	My first intership was QA testing position at<a href="http://www.vocera.com/"target="_blank"> Vocera </a>where I learned how to test a program and how agile development works. The second inter-job I had was Application programmer at <a href="http://www.edu.gov.on.ca/eng/"target="_blank">Ontario Ministry of Education </a>where i learnt JavaScript to debug and program.<br><br>
+	
+	</div>
+	<div id="txtaboutmesecond">I  consider myself as a computer geek. I like to collect computer gears and follow the news of technology. I have an unprinted black mechanical keyboard and my friends do not understand why I like it unprinted (<a href="https://raw.githubusercontent.com/iFun/iFun.github.io/master/images/Keyboard.jpg"target="_blank">Because it looks awesome</a>).<br><br>My aspiration is to be part of a team that engineers great products that are used by people everyday just like the iPhone.
+	</div>
+	</div>
+	<div class="section" id="section2">
+		<div id="projects">My Works</div>
+		<ul class="photo-grid">
+	<li>
+		<a href="https://github.com/iFun/iFun.github.io"target="_blank">
+			<figure>
+				<img src="resources/images/website.PNG" height="180" width="320" alt="website">
+				<figcaption><p>Website - HTML & CSS + jQuery</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://github.com/iFun/RSA-cryp--tography"target="_blank">
+			<figure>
+				<img src="resources/images/RSA.jpg" height="180" width="320" alt="RSA">
+				<figcaption><p>A symmetric 32-bit keys to encrypt txt files in C#</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li><a href="https://github.com/iFun/Battleship"target="_blank">
+			<figure>
+				<img src="resources/images/battleship.png" height="180" width="320" alt="battleship">
+				<figcaption><p>A console battleship game implemented in C#</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li><a href="https://github.com/iFun/ECE250"target="_blank">
+		<figure>
+			<img src="resources/images/Data.jpg" height="180" width="320" alt="data">
+			<figcaption><p>Projects to practice different structures and algorithms implemented in C++</p></figcaption>
+		</figure>
+	</a>
+	</li>
+	<li><a href="https://github.com/iFun/Drowsy-Alert"target="_blank">
+	<figure>
+		<img src="resources/images/Drowsy-Alert.jpg" height="180" width="320" alt="Drowsy-Alert">
+		<figcaption><p>A hackthon project that alert driver when they falling asleep using brain wave detect device</p></figcaption>
+	</figure>
+	</a>
+	</li>
+	<li><a href="https://github.com/iFun"target="_blank">
+	<figure>
+		<img src="resources/images/future.jpg" height="180" width="320" alt="future">
+		<figcaption><p>????</p></figcaption>
+	</figure>
+	</a>
+	</li>
+</ul>
+	</div>
+	<div class="section" id="section3">
+		<div id= "socialbutton">
+		<a href="mailto:bill.guocheng@gmail.com" class="icon-button inbox"><i class="icon-inbox">
+		</i><span></span></a>
+		<a href="https://github.com/iFun"target="_blank" class="icon-button github"><i class="icon-github">
+		</i><span></span></a>
+		<a href="https://www.linkedin.com/in/billchengguo"target="_blank" class="icon-button linkedin"><i class="icon-linkedin">
+		</i><span></span></a>
+		<a href="https://www.facebook.com/billguocheng"target="_blank" class="icon-button facebook"><i class="icon-facebook">
+		</i><span></span></a>
+		<a href="https://www.dropbox.com/s/sjz6pczejtsar10/resume.pdf?dl=1"target="_blank" class="icon-button file"><i class="icon-file">
+		</i><span></span></a>
+		</div>
+		<div id="Contactmetitle">Contact Me</div>
+		<div id="finaltxt">If you are interested in finding out more about me or have any questions please feel free to contact me. I am more than happy to hear from you! You can email me, add me on linkedin or just check out my resume. I have a 4- months work termed between every 4-months - However I can work 8-months terms as well so I have plenty of time internships. I will reply as soon as possible, that being said email or txt message are the fastest ways to reach me.</div>
+		<div class="horsepicture"> <img src="resources/images/horse.jpg" height="570px"width= "760px"></div>
+	</div>
+
+</div>
+
+</body>
+</html>
