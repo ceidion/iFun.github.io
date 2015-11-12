@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Time to Binary</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bill Guo">
+        <meta name="keywords" content="time to binary converter">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="https://github.com/iFun/iFun.github.io/blob/master/images/iconkey.jpg?raw=true">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/myjs.js"></script>
+       
+        <link href="css/mycss.css" rel="stylesheet">
+    </head>
+    <body class="container">
+            <h1 ng-controller="mainController"><span ng-bind = "HHmmss"></span></h1>
+            <h2><span ng-controller="mainController" id="binary">{{data}}</span></h2>
+    </body>
+</html>

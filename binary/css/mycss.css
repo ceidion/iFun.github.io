@@ -1,0 +1,21 @@
+.container{
+    background-color: black;
+    
+}
+.h2,
+.h1,
+span
+{
+    color: white;
+    font-size: 30vh;
+    position: absolute;
+    left: 40vh;
+    bottom: 50vh;
+}
+#binary{
+    font-size: 10vh;
+    left: 50vh;
+    bottom: 25vh;
+    position: absolute;
+    color: ghostwhite;
+}
