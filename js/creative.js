@@ -22,10 +22,9 @@
         offset: 51
     })
 
-    //check if this work
+
     $(document).ready(function() {
         var img = new Image();
-
         img.onload = function(){
             $('header').css('background-image', 'url(../iFun.github.io/img/header.jpg)');
         }
