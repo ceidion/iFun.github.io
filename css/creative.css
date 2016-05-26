@@ -56,31 +56,31 @@ p {
     -webkit-animation-delay: 0.5s;
 }
 #projects_text{
-    color: #8c9398; 
-    word-spacing: 1px; 
-    line-height: 25px; 
+    color: #8c9398;
+    word-spacing: 1px;
+    line-height: 25px;
     font-size: 14px;
     margin-left: 10px;
     text-align: center;
 }
-.batman { 
-    background: url('../img/batman.jpg') 
-    no-repeat center center; 
+.batman {
+    background: url('../img/batman.jpg')
+    no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed; 
-    padding: 50px 0; 
+    background-attachment: fixed;
+    padding: 50px 0;
 }
-.batman h3 { 
-    color: #fff; 
-    font-size: 25px; 
-    text-transform: uppercase; 
+.batman h3 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
     letter-spacing: 5px; }
-.batman h3 span { 
-    display: block; 
-    font-size:  25px; margin-top:  25px; 
+.batman h3 span {
+    display: block;
+    font-size:  25px; margin-top:  25px;
 }
 
 .bg-primary {
@@ -127,7 +127,7 @@ p {
 .bg-dark {
     color: #fff;
     background-color: darkgray;
-    size: 
+    size:
 }
 
 .text-faded {
@@ -248,13 +248,14 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header_small.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
 
 header .header-content {
     position: relative;

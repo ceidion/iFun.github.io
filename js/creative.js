@@ -21,6 +21,10 @@
         target: '.navbar-fixed-top',
         offset: 51
     })
+    //check if this work
+    $(document).ready(function() {
+        $('header').css('background-image', 'url(../iFun.github.io/img/header.jpg)');
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function () {
